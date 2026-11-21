@@ -68,6 +68,7 @@ body {
   letter-spacing: 1.5px;
   background: linear-gradient(135deg, #38bdf8, #818cf8);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -157,6 +158,7 @@ body {
 .highlight-gradient {
   background: linear-gradient(135deg, #38bdf8, #818cf8);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -874,21 +876,3 @@ body {
     max-width: 100%;
   }
 }}
-@media (max-width: 768px) {
-  .hero,
-  .hero-section,
-  .main-content {
-    background-position: absolute;
-    background-attachment: scroll !important;
-    transform: translateZ(0);
-    -webkit-transform: translateZ(0);
-    overflow-x: clip;
-  }
-}
-@media (max-width: 768px) {
-  .hero,
-  .hero-section {
-    height: auto;
-    min-height: 100dvh;
-  }
-}
