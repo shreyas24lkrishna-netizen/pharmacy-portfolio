@@ -221,11 +221,10 @@ body {
 
 /* --- MAIN CONTENT BODY BACKGROUND --- */
 .main-content-body {
-  position: absolute;
+  position: relative;
   background: linear-gradient(180deg, rgba(3, 7, 18, 0.20) 0%, rgba(3, 7, 18, 0.30) 50%, rgba(3, 7, 18, 0.20) 100%), 
               url('./assets/body-bg.png') no-repeat center center fixed;
   background-size: cover;
-  background-position: center top;
   background-repeat: no-repeat;
   padding-top: 20px;
 }
