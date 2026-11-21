@@ -803,46 +803,103 @@ body {
 }
 
 @media (max-width: 768px) {
-  .hero-section {
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover; /* or try 'contain' / '100% auto' if you want less cropping */
-    min-height: auto;
-    padding: 32px 18px 44px;
-  }
-}
 
-@media (max-width: 768px) {
-  .hero-content,
-  .hero-text {
+  .hero-section {
+    width: 100%;
+    min-height: auto;
+    height: auto;
+
+    /* Display the complete desktop background image */
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+
+    padding: 35px 18px 45px;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+  /* Hero content alignment */
+  .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     text-align: center;
     width: 100%;
     max-width: 100%;
-    gap: 10px;
+    gap: 18px;
   }
 
+  /* Profile picture alignment */
+  .hero-profile,
+  .profile-image {
+    width: 155px;
+    height: 155px;
+    min-width: 155px;
+    min-height: 155px;
+    margin: 0 auto 12px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #28baff;
+  }
+
+  .hero-profile img,
+  .profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 50%;
+    display: block;
+  }
+
+  /* Hero headings */
   .hero-content h1,
+  .hero-title {
+    font-size: clamp(27px, 8vw, 36px);
+    line-height: 1.2;
+    margin: 8px 0;
+    text-align: center;
+  }
+
   .hero-content h2,
-  .hero-content h3,
-  .hero-content p {
-    margin: 0 auto;
+  .hero-content h3 {
+    text-align: center;
+    margin: 8px 0;
+  }
+
+  /* Specialization text */
+  .hero-tags,
+  .hero-specializations {
+    font-size: 15px;
+    line-height: 1.6;
     text-align: center;
     max-width: 100%;
   }
 
-  .hero-title,
-  .hero-content h1 {
-    font-size: clamp(2rem, 9vw, 2.75rem);
-    line-height: 1.15;
+  /* Description */
+  .hero-content p {
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: center;
+    margin: 8px auto;
+    max-width: 100%;
   }
 
-  .hero-subtitle,
-  .hero-tags,
-  .hero-specializations {
-    font-size: clamp(0.85rem, 3.6vw, 1rem);
-    line-height: 1.45;
+  /* Buttons */
+  .hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .hero-buttons a {
+    max-width: 100%;
   }
 }
