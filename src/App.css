@@ -809,16 +809,7 @@ body {
     min-height: auto;
     height: auto;
 
-    /* Display the complete desktop background image */
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-
-    padding: 35px 18px 45px;
-    box-sizing: border-box;
-    overflow: hidden;
-  }
+  
 
   /* Hero content alignment */
   .hero-content {
@@ -832,29 +823,7 @@ body {
     gap: 18px;
   }
 
-  /* Profile picture alignment */
-  .hero-profile,
-  .profile-image {
-    width: 155px;
-    height: 155px;
-    min-width: 155px;
-    min-height: 155px;
-    margin: 0 auto 12px;
-    display: block;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #28baff;
-  }
-
-  .hero-profile img,
-  .profile-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    border-radius: 50%;
-    display: block;
-  }
+ 
 
   /* Hero headings */
   .hero-content h1,
@@ -902,4 +871,4 @@ body {
   .hero-buttons a {
     max-width: 100%;
   }
-}
+}}
